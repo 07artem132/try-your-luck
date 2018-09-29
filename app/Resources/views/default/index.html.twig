@@ -3,9 +3,10 @@
 {% block body %}
     <div id="wrapper">
         <div id="container" style="text-align: center">
+            Привет, твой ip: {{ ip }}
            {{ message }}<br/>
-
-            Магическое число обновляется каждый час
+            предыдущее магическое число для твоего IP адреса {{ previousNumberForIP }} {% if previousNumberForIP%2==0 %} (счастливое) {% else %} (не счастливое) {% endif %}<br/>
+            Магическое число обновляется через {{ diff }} секунд
 
         </div>
     </div>
