@@ -16,5 +16,3 @@
 /vendor/
 /web/bundles/
 .idea/
-composer.lock
-src/GenerateNumberBundle/
