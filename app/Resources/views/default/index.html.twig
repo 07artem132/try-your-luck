@@ -5,7 +5,9 @@
         <div id="container" style="text-align: center">
             Привет, твой ip: {{ ip }}
            {{ message }}<br/>
+            {% if previousNumberForIP is not  empty %}
             предыдущее магическое число для твоего IP адреса {{ previousNumberForIP }} {% if previousNumberForIP%2==0 %} (счастливое) {% else %} (не счастливое) {% endif %}<br/>
+            {% endif %}
             Магическое число обновляется через {{ diff }} секунд
 
         </div>
@@ -55,7 +57,7 @@
         #wrapper {
             background: #FFF;
             margin: 1em auto;
-            max-width: 800px;
+            max-width: 900px;
             width: 95%;
         }
 
@@ -86,7 +88,7 @@
 
         @media (min-width: 768px) {
             #wrapper {
-                width: 80%;
+                width: 84%;
                 margin: 2em auto;
             }
 

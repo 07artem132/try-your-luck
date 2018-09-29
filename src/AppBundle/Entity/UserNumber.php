@@ -27,14 +27,14 @@ class UserNumber
     /**
      * @var int
      *
-     * @ORM\Column(name="user_id", type="integer")
+     * @ORM\Column(name="user_id", type="integer", options={"unsigned"=true})
      */
     private $userId;
 
     /**
      * @var int
      *
-     * @ORM\Column(name="number", type="integer")
+     * @ORM\Column(name="number", type="integer", options={"unsigned"=true})
      */
     private $number;
 
